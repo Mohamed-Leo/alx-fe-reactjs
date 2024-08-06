@@ -14,7 +14,7 @@ function App() {
         <MainContent />
         <Footer /> */}
 
-        <UserProfile name = "Mohamed" age = "23" bio = "Full Stack Developer" />
+        <UserProfile name = "Alice" age = "25" bio = "Loves hiking and photography" />
       </>
   )
 }
