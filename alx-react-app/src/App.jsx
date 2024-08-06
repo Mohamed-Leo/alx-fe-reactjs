@@ -1,7 +1,8 @@
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import MainContent from './components/MainContent'
+import UserProfile from './components/UserProfile'
+// import Footer from './components/Footer'
+// import Header from './components/Header'
+// import MainContent from './components/MainContent'
 import WelcomeMessage from './components/WelcomeMessage'
 
 function App() {
@@ -9,9 +10,11 @@ function App() {
   return (
       <>
         <WelcomeMessage />
-        <Header />
+        {/* <Header />
         <MainContent />
-        <Footer />
+        <Footer /> */}
+
+        <UserProfile name = "Mohamed" age = "23" bio = "Full Stack Developer" />
       </>
   )
 }
