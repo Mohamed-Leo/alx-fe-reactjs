@@ -2,7 +2,7 @@
 
 function MainContent() {
     return (
-        <main>
+        <main style={{backgroundColor : '#2c3e50', padding : '1rem'}}>
             <p>I love to visit New York, Paris, and Tokyo.</p>
         </main>
     )
