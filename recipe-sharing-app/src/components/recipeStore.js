@@ -10,7 +10,8 @@ export const useRecipeStore = create(set => ({
     })),
     updateRecipe : (updateData) => set(state => ({
         recipes: state.recipes.map(recipe => recipe.id === updateData.id ? 
-            {...recipe, title : updateData.title , description : updateData.description} : recipe
+            {...recipe, id : updateData.id ,  title : updateData.title , description : updateData.description} 
+            : recipe
     )})),
     setRecipes: (recipes) => set({ recipes })
 }));
