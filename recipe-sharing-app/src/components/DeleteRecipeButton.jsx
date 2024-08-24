@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { useRecipeStore } from './recipeStore';
+import { useNavigate } from 'react-router-dom';
 
 function DeleteRecipeButton() {
     const deleteRecipe = useRecipeStore(state => state.deleteRecipe);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
