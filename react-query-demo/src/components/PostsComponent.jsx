@@ -1,14 +1,16 @@
 import { useQuery } from 'react-query'
 
 function PostsComponent() {
-    const { isLoading, error, data } = useQuery('repoData', () =>
+    const { isLoading, error, data } = useQuery('fetchPosts', () =>
     fetch('https://jsonplaceholder.typicode.com/posts').then(res =>
         res.json()
     )
 )
 
+    const isError = error ? error : false;
+
     if (isLoading) return <div>Loading...</div>;
-    if (error) return <div>An error has occurred: {error.message}</div>
+    if (isError) return <div>An error has occurred: {error.message}</div>
 
     return (
         <div>
