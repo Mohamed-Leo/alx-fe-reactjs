@@ -5,6 +5,8 @@ const fetchPosts = async () => {
     return response.json();
 };
 
+//  ["cacheTime", "staleTime", "refetchOnWindowFocus", "keepPreviousData"]
+
 function PostsComponent() {
     const { data, error, isLoading, isError, refetch } = useQuery('posts', fetchPosts);
 
