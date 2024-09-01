@@ -1,4 +1,7 @@
-import { useQuery } from 'react-query'
+import { useQuery } from 'react-query';
+
+
+// ["cacheTime", "staleTime", "refetchOnWindowFocus", "keepPreviousData"]
 
 function PostsComponent() {
     const { isLoading, error, data } = useQuery('fetchPosts', () =>
