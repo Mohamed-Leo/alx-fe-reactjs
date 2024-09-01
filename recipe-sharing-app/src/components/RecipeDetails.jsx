@@ -1,7 +1,7 @@
 // RecipeDetails component
 import DeleteRecipeButton from './DeleteRecipeButton';
 import { useRecipeStore } from './recipeStore';
-import { EditRecipeForm } from './recipeStore';
+import EditRecipeForm from "./EditRecipeForm";
 
 const RecipeDetails = ({ recipeId }) => {
     const recipe = useRecipeStore(state =>

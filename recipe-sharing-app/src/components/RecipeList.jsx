@@ -1,6 +1,6 @@
 // RecipeList component
 import { useRecipeStore } from './recipeStore';
-import { SearchBar } from './SearchBar';
+import SearchBar  from './SearchBar';
 import { Link } from 'react-router-dom';
 
 const RecipeList = () => {
