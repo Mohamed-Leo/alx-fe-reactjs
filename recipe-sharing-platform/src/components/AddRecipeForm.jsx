@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// target.value , steps
 
 function AddRecipeForm() {
     const [newRecipe , setAddNewRecipe] = useState({
