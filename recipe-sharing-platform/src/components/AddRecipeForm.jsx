@@ -23,6 +23,26 @@ function AddRecipeForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        validate();
+
+        // Process form submission
+        console.log(newRecipe);
+
+        // Clear
+        setAddNewRecipe({
+            title : "",
+            ingredients: "",
+            instructions : ""
+        });
+        setErrors({
+            titleError : "",
+            ingredientsError : "",
+            instructionsError : ""
+        });
+    }
+
+    const validate = () => {
         const {title , ingredients , instructions} = newRecipe;
 
         if (!title || !ingredients || !instructions) {
@@ -39,21 +59,6 @@ function AddRecipeForm() {
             setErrors({...errors , ingredientsError : "At least two ingredients required"});
             return;
         }
-
-        // Process form submission
-        console.log(newRecipe);
-
-        // Clear
-        setAddNewRecipe({
-            title : "",
-            ingredients: "",
-            instructions : ""
-        });
-        setErrors({
-            titleError : "",
-            ingredientsError : "",
-            instructionsError : ""
-        });
     }
 
     return (
