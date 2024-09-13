@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
 
@@ -9,7 +10,7 @@ function HomePage() {
         .then((response) => response.json())
         .then((data) => setRecipes(data))
         .catch((error) => console.error('Error fetching recipes:', error));
-    });
+    } , []);
 
     return (
         <div className="container mx-auto mt-10">
@@ -24,12 +25,12 @@ function HomePage() {
                         <div className="p-4">
                             <h2 className="text-xl font-semibold mb-2">{recipe.title}</h2>
                             <p className="text-gray-600">{recipe.summary}</p>
-                            <a
-                            href={`/recipes/${recipe.id}`}
+                            <Link
+                            to={`recipe/${recipe.id}`}
                             className="text-blue-500 hover:text-blue-700 mt-4 inline-block"
                             >
                             View Recipe
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}

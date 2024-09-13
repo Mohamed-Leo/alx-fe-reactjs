@@ -3,24 +3,93 @@
         "id": 1,
         "title": "Spaghetti Carbonara",
         "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "200g spaghetti",
+            "100g bacon",
+            "2 eggs",
+            "50g cheese",
+            "Black pepper to taste"
+        ],
+        "instructions": [
+            "Boil the spaghetti according to package instructions.",
+            "While the pasta is cooking, fry the bacon in a pan until crisp.",
+            "In a bowl, beat the eggs and mix in the cheese.",
+            "Drain the spaghetti and immediately toss it with the bacon.",
+            "Remove the pan from heat and mix in the egg and cheese mixture quickly.",
+            "Season with black pepper and serve immediately."
+        ]
     },
     {
         "id": 2,
         "title": "Chicken Tikka Masala",
-        "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-        "image": "https://via.placeholder.com/150"
+        "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "200g chicken breast, cut into chunks",
+            "100g yogurt",
+            "1 tbsp tikka masala powder",
+            "200g tomato sauce",
+            "50ml cream",
+            "1 onion, finely chopped",
+            "2 cloves garlic, minced",
+            "1 tbsp ginger, minced",
+            "Salt to taste",
+            "Coriander leaves for garnish"
+        ],
+        "instructions": [
+            "Marinate the chicken in yogurt and tikka masala powder for at least 2 hours.",
+            "Grill or pan-fry the marinated chicken until cooked through.",
+            "In a separate pan, sauté onions, garlic, and ginger until golden brown.",
+            "Add the tomato sauce and cook for a few minutes.",
+            "Stir in the grilled chicken and cream, and cook until the sauce thickens.",
+            "Garnish with coriander leaves and serve with rice or naan."
+        ]
     },
     {
         "id": 3,
         "title": "Pizza Margherita",
-        "summary": "Mozzarella Cheese and Pizza Sauce & creamy tomato based gravy.",
-        "image": "https://via.placeholder.com/150"
+        "summary": "Mozzarella Cheese and Pizza Sauce on a classic pizza base.",
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "1 pizza dough",
+            "100g pizza sauce",
+            "150g mozzarella cheese",
+            "Fresh basil leaves",
+            "Olive oil",
+            "Salt to taste",
+            "Pepper to taste"
+        ],
+        "instructions": [
+            "Preheat the oven to 220°C (425°F).",
+            "Roll out the pizza dough on a floured surface to your desired thickness.",
+            "Spread the pizza sauce evenly over the dough.",
+            "Top with mozzarella cheese.",
+            "Season with salt and pepper, and drizzle with olive oil.",
+            "Bake in the oven for 12-15 minutes or until the crust is golden and the cheese is bubbling.",
+            "Remove from the oven and top with fresh basil leaves before serving."
+        ]
     },
     {
         "id": 4,
         "title": "Lampa Shank",
-        "summary": "Chickpea Patty, Tomato, Cucumber, Feta, Red Onion, Mixed Greens, Basil Aioli",
-        "image": "https://via.placeholder.com/150"
+        "summary": "Chickpea Patty with Tomato, Cucumber, Feta, Red Onion, Mixed Greens, and Basil Aioli.",
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "1 chickpea patty",
+            "1 tomato, sliced",
+            "1 cucumber, sliced",
+            "50g feta cheese, crumbled",
+            "1/4 red onion, thinly sliced",
+            "Mixed greens",
+            "Basil aioli for dressing"
+        ],
+        "instructions": [
+            "Cook the chickpea patty according to package instructions.",
+            "Arrange the mixed greens on a plate.",
+            "Top with tomato slices, cucumber slices, crumbled feta cheese, and red onion.",
+            "Place the cooked chickpea patty on top.",
+            "Drizzle with basil aioli and serve immediately."
+        ]
     }
 ]
