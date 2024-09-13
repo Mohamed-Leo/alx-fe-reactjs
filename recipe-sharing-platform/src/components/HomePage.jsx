@@ -15,6 +15,7 @@ function HomePage() {
     return (
         <div className="container mx-auto mt-10">
             <h1 className="text-4xl font-bold text-center mb-8">Recipe Sharing Platform</h1>
+            <Link to="/add-recipe" className="text-blue-500 hover:underline my-6 block pl-4">Add a New Recipe</Link>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-3">
                 {recipes?.map((recipe) => (
                     <div
