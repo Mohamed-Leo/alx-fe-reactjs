@@ -1,12 +1,12 @@
-import UserSearch from "./components/UserSearch";
+import Search from "./components/Search";
 
 
 function App() {
 
   return (
-    <div>
+    <div className="container">
       <h1>GitHub User Search</h1>
-      <UserSearch />
+      <Search />
     </div>
   );
 }
