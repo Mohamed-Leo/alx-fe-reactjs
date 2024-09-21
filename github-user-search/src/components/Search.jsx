@@ -22,6 +22,12 @@ function Search() {
             setUserData(data);
             // clear erros----
             setError(null);
+            // clear form data--
+            setFormData({
+                username : "",
+                location : "",
+                minRepos : ""
+            });
         }
         catch {
             setError("Looks like we cant find the user");
