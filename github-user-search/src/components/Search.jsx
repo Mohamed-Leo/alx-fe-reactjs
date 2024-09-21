@@ -1,11 +1,35 @@
 import { useState } from "react";
 import fetchUserData from "../services/githubService";
 
+// "map"
+
 function Search() {
     const [username, setUsername] = useState("");
     const [userData, setUserData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
+
+    // fetch data------
+    const getUserData = async () => {
+        try {
+            // call the fetchUserData by service----
+            const data = await fetchUserData(username)
+            // set the data to state
+            setUserData(data);
+            // clear erros----
+            console.log(userData);
+            setError(null);
+            
+        }
+        catch {
+            setError("Looks like we cant find the user");
+            // clear data---
+            setUserData(null);
+        }
+        finally {
+            setLoading(false);
+        }
+    }
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -17,19 +41,7 @@ function Search() {
         setLoading(true);
         setError("");
 
-        // call the fetchUserData by service----
-        const data = fetchUserData(username);
-        data
-            .then((res) => {
-                setUserData(res);
-                setLoading(false);
-                setError(null);
-            })
-            .catch(() => {
-                setError("Looks like we cant find the user");
-                setLoading(false);
-                setUserData(null);
-            });
+        getUserData();
     };
 
     return (
